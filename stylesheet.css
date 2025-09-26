@@ -1,0 +1,689 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/*Ruta: navingering och logga*/
+nav {
+  background-color: #72ab8f;
+}
+
+/*Navigeingsbaren*/
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*Reglerar höjden på rutorna runt varje länk i navigeringen*/
+nav li {
+  height: 100px;
+}
+
+/*Reglerar texten i länkarna i navigeringen*/
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+/*Hover o aktuell sida.*/
+a.active,
+a:hover {
+  background: white;
+  transition: .5s;
+}
+
+/*Hovrar över alla länkar i nav*/
+nav a:hover {
+  background-color: white;
+}
+
+/*Hovrar över loggan, bakgrunden ska matcha loggans färg*/
+.link-logo:hover {
+  background-color: #72ab8f;
+
+}
+
+/*Hamburgermenyn*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+/*Hamburgermenyn syns EJ i fullstor skärm*/
+.menu-button {
+  display: none;
+}
+
+ 
+
+/******************************STARTSIDA******************************/
+
+
+/*Mörkbeige:a rutan*/
+.main-container {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+/*Ruta runt bilden på Johanna*/
+.front-page-pic {
+  padding: 1%;
+  margin-top: 7%;
+  margin-left: 20%;
+  margin-bottom: 2%;
+  width:25%;
+}
+
+/*Bild startsida, Johanna*/
+.front-page-pic img {
+  filter: drop-shadow(8px 8px 10px gray);
+  border-radius: 2px;
+  width:100%;
+}
+
+/*Högra rutan: info om massage o pt*/
+.right-box {
+  margin-top: 14%;
+  width: 30%;
+  padding: 4%;
+}
+
+/*Linje under massage och personlig träning*/
+.right-box hr {
+  border: 2px solid #72ab8f;
+  width: 100%;
+}
+
+/*Knapp: Läs mer & Kontakt*/
+.me-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #5d8d76;
+  font-size: 17px;
+  background-color: #5d8d76;
+  position: relative;
+  padding: 1% 3%;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+/*Hoovrar över länkarna "om mig" & "kontakt"*/
+.me-btn:hover {
+  border: 1px solid #8cd7b3;
+  background-color: #8cd7b3;
+  transition: 1s;
+}
+
+/*Boxen runt Massage och Personlig träning*/
+.info_box {
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin-bottom: 1%;
+}
+
+/*Orden: massage och personlig träning*/
+.offer_text {
+  color: #5d8d76;
+  font-size: x-large;
+  font-style: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Knappar: Läs mer*/
+.btn-readmore {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #5d8d76;
+  font-size: 1em;
+  background-color: #5d8d76;
+  position: relative;
+  padding: 3% 9%;
+  cursor: pointer;
+}
+
+/*Hoover över knapp: Läs mer*/
+.btn-readmore:hover {
+  border: 1px solid #fff3f3;
+  background-color: #fff3f3;
+  transition: 1s;
+}
+
+/*Linjen på startsida*/
+.hr-main {
+  border: 1px solid #72ab8f;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 2%;
+  margin-top: 3%;
+
+}
+
+/*Bilder*/
+.pictures {
+  filter: drop-shadow(8px 8px 10px gray);
+  opacity: 80%;
+  max-width: 100%;
+}
+
+/*Kontaktformulär: mobil/tablet-version
+.contact-container {
+  background-color: #fef0e4;
+  height: 80vh;
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}*/
+
+/******************************OM MIG******************************/
+
+/*Text & bild om Johanna*/
+.me-section {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 1%;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5%;
+}
+
+/*Text: Johanna*/
+.me-text {
+  font-size: 1em;
+  margin-top: 2%;
+  flex: 1;
+}
+
+/*Bild: Johanna*/
+.me-bg-image img {
+  max-width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+/*Meriter*/
+.container-meriter {
+  background-color: #e8cfc1;
+  text-align: center;
+}
+
+/*Meriter*/
+.meriter {
+  padding: 1%;
+  margin-bottom: 5%;
+}
+
+/*Box runt mobilbild*/
+.mobil-picture {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/*Bild: mobil, syns i mobilläge*/
+.mobil-picture img {
+  display: none;
+  background-color: white;
+  /* background-color: #fef0e4;*/
+  width: 100%;
+  border: none;
+}
+
+/*Linje under mobilbild*/
+#hr-me {
+  margin-top: 0;
+
+}
+
+/******************************MASSSSAGE & PERSONLIG TRÄNING******************************/
+
+/*Både massage och pt*/
+.main-container-products {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  border: none;
+}
+
+.picture_massage_pt {
+  width: 100%;
+}
+
+/*Gäller massage och Personlig träning*/
+.products {
+  flex: 1;
+  font-size: 1em;
+  margin-bottom: 5%;
+}
+
+/*Rutan runt massage-bild*/
+.picture_box {
+  background-color: white;
+}
+
+/*Titel på massage-behandlingar*/
+.text_title {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.products hr {
+  border: 1px solid#72ab8f;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-bottom: 1%;
+}
+
+/*PT: 2 bilder på rad*/
+#pictures_03 {
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2%;
+  background-color: white;
+}
+
+/*Båda bilderna*/
+#pic_box {
+  filter: drop-shadow(8px 8px 10px gray);
+  padding: 1%;
+  opacity: 80%;
+  margin-top: 5%;
+  background-color: white;
+}
+
+
+/******************************KONTAKT*****************************/
+
+
+.container-contacts {
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+
+.contact-text {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.btn-readmore-cont{
+  display: inline-block;
+  text-decoration: none;
+  color: #5d8d76;
+  font-size: 1em;
+  position: relative;
+  cursor: pointer;
+  margin-top:1%;
+}
+
+#contact-btn{
+  margin-bottom: 10%;
+}
+
+.offer_text_cont{
+  color: #5d8d76;
+  font-size: 1.2em;
+  font-style: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#contact-pic{
+  width:80%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom:6%;
+}
+/*********************KONTAKTFORMULÄR SOM INTE ANVÄNDS JUST NU****************************************/
+/*Kontaktsida, hela sidan ANVÄNDS INTE JUST NU
+.contact-container-contact {
+  background-color: white;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+
+}*/
+
+/*Vänstra boxen med kontakformuläret
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+}*/
+
+/*Titeln : kontakt i kontaktformuläret
+.contact-left-title h2 {
+  font-weight: 400;
+  color: #608d77;
+  font-size: 3rem;
+  margin-bottom: 5px;
+}*/
+
+/*Linjen som är under ordet KONTAKT
+.contact-left-title hr {
+  border: none;
+  width: 100%;
+  height: 2px;
+  background-color: #72ab8f;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+*/
+/*Alla kontakt-rutor
+.contact-inputs {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 30px;
+  border: 1px solid rgb(144, 141, 141);
+}*/
+
+/*Markerar vilken kontakt-ruta man har ställt sig i
+.contact-inputs:focus {
+  border: 2px solid rgb(196, 138, 72);
+}*/
+
+/*Texten "ditt namn, epost, ditt meddelande i kontaktformuläret är i ljusgrå färg
+.contact-inputs::placeholder {
+  color: lightgray;
+}*/
+
+/*Textruta: Ditt meddelande.
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+  width: 100%;
+  border: 1px solid rgb(144, 141, 141);
+}*/
+
+/*"Välj ämne"
+.contact-left select {
+  width: 108%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #000000;
+  border-radius: 30px;
+  border: 1px solid rgb(144, 141, 141);
+
+}
+*/
+/*Knapp: skicka
+.contact-left button {
+  align-items: center;
+  padding: 1px, 3px;
+  font-size: 20px;
+  color: #fff;
+  width: 90px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, rgb(128, 77, 77), rgb(187, 156, 156));
+  cursor: pointer;
+}*/
+
+
+/*************************    *****FOOTER**********   ********************/
+
+.footer-container {
+  max-width: 100%;
+  background-color: #72ab8f;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border: none;
+  padding:0.1%;
+}
+
+.footer-box {
+  margin-top: 1%;
+
+}
+.footer-box img{
+  width:15%;
+}
+
+/******************************@MEDIA QUERIES******************************/
+
+/*Ipads/Tablets*/
+@media(max-width: 1024px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .sidebar {
+    /* Se till att detta är högre än allt annat. Gör att hamburgermenyn hamnar "framför" bilder etc */
+    z-index: 1000;
+  }
+
+  /*hovrar över och visar vilken sida man är inne på*/
+  a.active,
+  a:hover {
+    background: #72ab8f;
+    transition: .5s;
+  }
+
+  /*hovrar över alla länkar i nav*/
+  nav a:hover {
+    background-color: #72ab8f;
+  }
+
+  /*Loggan*/
+  .link-logo {
+    margin-left: 15%;
+  }
+
+
+/*Bild startsida, Johanna*/
+.front-page-pic img {
+  filter: drop-shadow(8px 8px 10px gray);
+  border-radius: 2px;
+  width:100%;
+}
+
+
+
+  /***************STARTSIDA*************/
+  .front-page-pic {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+    padding: 0%;
+  }
+
+  .right-box {
+    text-align: center;
+    margin-top: 0%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .me-btn {
+    display: inline-block;
+    padding: 12px 12px;
+  }
+  #text_box_pt {
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+ /* .contact-container {
+    display: flex;
+    background-color: white;
+    text-align: center;
+  }*/
+
+
+
+  /*****************OM MIG*****************/
+  .me-section {
+    flex-direction: column;
+    text-align: center;
+    width: 98%;
+    margin: 0%;
+    padding: 1%;
+
+  }
+
+  .me-text {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 60px;
+    order: 1;
+  }
+
+  .me-bg-image img {
+    order: 2;
+    opacity: 0.8;
+  }
+
+  .mobil-picture img {
+    display: flex;
+    margin-left: 2%;
+  }
+
+  .mobil-picture img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  /*****************MASSAGE O PT*****************/
+  .main-container-products {
+    margin-top: 0;
+  }
+
+  .products {
+    width: 98%;
+    text-align: center;
+    margin: 0%;
+    padding: 1%;
+  }
+
+  .massage_box img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+  }
+
+  .pictures img {
+    width: 100%;
+  }
+
+  #pictures_03 {
+    padding: 10px;
+    margin-top: 0px;
+  }
+
+  .hr-massage {
+    display: none;
+  }
+
+  /*****************KONTAKT*****************/
+  /*.contact-container-contact {
+    display: flex;
+    background-color: white;
+  }*/
+
+  .container-contacts {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+  }
+
+  /*****************FOOTER*****************/
+  .footer-box img{
+    width:50%;
+}
+}
+
+
+/*Phones*/
+@media(max-width: 700px) {
+  .sidebar {
+    width: 55%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .front-page-pic {
+    max-width: 100%;
+  }
+
+  .front-page-pic img {
+    margin-bottom: 0px;
+
+  }
+
+  .right-box {
+    text-align: center;
+    margin-top: 0;
+    padding: 10px;
+  }
+
+  .me-btn {
+    display: inline-block;
+    margin: 4px 2px;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+}

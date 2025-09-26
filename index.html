@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johanna Hage</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                            viewBox="0 96 960 960" width="26">
+                            <path
+                                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                        </svg></a></li>
+
+                <!--Länkarna som syns i storlek för mobilen-->
+                <li><a class="active" href="index.html">STARTSIDA</a></li>
+                <li><a href="about_me.html">OM MIG</a></li>
+                <li><a href="massage.html">MASSAGE</a></li>
+                <li><a href="pt.html">PERSONLIG TRÄNING</a></li>
+                <li><a href="contact.html">KONTAKT</a></li>
+            </ul>
+
+            <!--Detta syns INTE när man är kollar i läget för mobil-->
+            <ul>
+                <li><a class="link-logo" href="index.html"><img src="images/logo.png" width="400" height="100"
+                            border="0"></a></li>
+                <li class="hideOnMobile"><a class="active" href="index.html">STARTSIDA</a></li>
+                <li class="hideOnMobile"><a href="about_me.html">OM MIG</a></li>
+                <li class="hideOnMobile"><a href="massage.html">MASSAGE</a></li>
+                <li class="hideOnMobile"><a href="pt.html">PERSONLIG TRÄNING</a></li>
+                <li class="hideOnMobile"><a href="contact.html">KONTAKT</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="26" viewBox="0 96 960 960" width="26">
+                            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Huvudkontainern-->
+        <div class="main-container">
+
+            <!--Bild: startsida-->
+            <div class="front-page-pic">
+                <img src="images/Johanna.png" alt="Johanna Hage" />
+            </div>
+
+            <!--Högra box: info om massage och pt-->
+            <div class="right-box">
+                <h1>MASSAGE OCH <br>PERSONLIG TRÄNING I VARBERG</h1><br>
+                <hr><br>
+                <p>Jag heter Johanna Hage och har arbetat med massage och personlig träning i över 8 år.<br>
+                    I min studio i Varberg hjälper jag dig att må bättre – genom individanpassad träning, behandlingar
+                    och ett helhetstänk kring hälsa och välmående.</p><br><br>
+
+                <a href="about_me.html" class="me-btn">OM MIG</a>
+                <a href="contact.html" class="me-btn">KONTAKT</a><br><br><br>
+            </div>
+        </div>
+
+        <!--Beige:a rutan runt massage och personlig träning + bilderna -->
+        <div class="main_box2">
+
+            <!--Box runt bild+massage & bild+personlig träning-->
+            <div class="info_box">
+                <div id="text_box_massage">
+                    <p><span class="offer_text">MASSAGE</span>
+                        <br>Välkommen att uppleva kraften i professionell massage för återhämtning, avslappning och ökat
+                        välbefinnande.<br>
+                        Jag erbjuder behandlingar anpassade efter dina behov – från djupgående massage till mjukare
+                        avslappning. <br>
+                        Med fokus på muskelhälsa, stressreduktion och kroppens balans får du en stund bara för dig.
+                        <br><br>
+
+                        <img class="pictures" src="image" width="480" height="250" /><br><br>
+                        <a href="massage.html" class="btn-readmore">LÄS MER</a>
+                    </p>
+                </div>
+
+                <div id="text_box_pt">
+                    <p><span class="offer_text">PERSONLIG TRÄNING</span>
+                        <br>Välkommen till din resa mot en starkare, friskare och mer balanserad livsstil.<br>
+                        Som personlig tränare erbjuder jag skräddarsydd träning, anpassad efter dina mål,
+                        behov <br>och förutsättningar. Med fokus på hållbar utveckling, teknik och motivation hjälper
+                        jag dig att
+                        nå din fulla potential.<br><br>
+
+                        <img class="pictures" src="images/pt.png" width="480" height="250" /><br><br>
+                        <a href="pt.html" class="btn-readmore">LÄS MER</a><br><br>
+                </div>
+                <hr class="hr-main">
+            </div>
+
+            <!--Bild på en mobil med info om instagrm-->
+            <div class="mobil-picture">
+                <a href="https://www.instagram.com/your_instagram_atletkliniken/" target="_blank"><img
+                        src="images/instagram.png" alt="bg" /></a>
+            </div>
+
+            <!--Info om friskvårdsbidrag-->
+            <div class="main-container-products">
+                <section class="products">
+                    <br><span class="offer_text">Nyttja friskvårdsbidrag?</span><br><br>
+                    <p>Både massage och personlig träning klassas som friskvård och hos mig – får du alltid
+                        ett fullständigt kvitto att lämna in till din arbetsgivare.<br>
+
+                        Du kan också välja att köpa t.ex. en massagebehandling till dig själv nu, för att nyttja<br>
+                        ditt friskvårdsvårdsbidrag, men få det tillgodo iform av presentkort om du inte önskar
+                        nyttja tillfället direkt.<br>
+                        Presentkort hos mig är giltiga i 6 månader efter utfärdat datum. <br>
+
+                        <br>Är ni anslutna till Benify på din arbetsplats så kan du scanna in det fysiska kvittot från
+                        mig <br>
+                        i efterhand och få summan utbetald nästkommande månad.<br>
+                        <br>
+                        Jag är tyvärr inte ansluten till epassi. <br><br>
+
+                        <hr class="hr-massage">
+                    </p>
+
+                    <section class="products">
+                        <img class="pictures" src="../Webbutveckling/images/presentkort.jpg" width="460"
+                            height="400" /><br><br>
+                        <br><span class="offer_text">Presentkort</span><br><br>
+                        <p>Nu kan du ge bort presentkort på Atletkliniken! <br>Kontakta mig på instagram, e-post eller
+                            besök mig i lokalen i Varberg!<br><br><br>
+
+                            <hr class="hr-massage">
+
+                        </p>
+            </div>
+        </div>
+
+        <!-- KOD FÖR KONTAKTFORMULÄR MEN DET FUNKAR INTE-->
+
+        <!--<div class="contact-container">
+                <form action="" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>Kontakt</h2>
+                        <hr>
+                    </div>
+                    <input type="text" name="name" placeholder="Ditt namn" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Epost" class="contact-inputs" required>
+
+                    <select id="subject" name="subject" required>
+                        <option value="ämne">Välj ämne</option>
+                        <option value="massage">Massage</option>
+                        <option value="personlig träning">Personling Träning</option>
+                        <option value="övrigt">Övrigt</option>
+                    </select>
+                    <textarea name="message" placeholder="Ditt meddelande" class="contact-inputs" required></textarea>
+                    <button type="submit">Skicka</button>
+                </form>
+               
+            </div>-->
+
+    </main>
+
+    <!--Javascript-->
+    <script src="main.js"></script>
+
+
+    <!--Footer-->
+    <footer>
+        <hr class="hr-footer">
+
+        <div class="footer-container">
+            <div class="footer-box">
+                <span class="text_title"> Kontakt</span><br>
+                Johanna Hage<br>
+                Härdgatan 15<br>
+                432 32 Varberg</p>
+            </div>
+            <div class="footer-box">
+                <img src="images/footer.png" />
+            </div>
+            <div class="footer-box">
+                <p>info@Atletkliniken.se<br>
+                    073- xx xx xxx</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

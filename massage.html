@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johanna Hage</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                            viewBox="0 96 960 960" width="26">
+                            <path
+                                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                        </svg></a></li>
+
+                <!--Länkar: syns i mobilläge-->
+                <li><a href="index.html">STARTSIDA</a></li>
+                <li><a href="about_me.html">OM MIG</a></li>
+                <li><a class="active" href="massage.html">MASSAGE</a></li>
+                <li><a href="pt.html">PERSONLIG TRÄNING</a></li>
+                <li><a href="contact.html">KONTAKT</a></li>
+            </ul>
+
+            <!--Syns INTE i mobilläge-->
+            <ul>
+                <li><a class="link-logo" href="index.html"><img src="images/logo.png" width="400" height="100"
+                            border="0"></a></li>
+                <li class="hideOnMobile"><a href="index.html">STARTSIDA</a></li>
+                <li class="hideOnMobile"><a href="about_me.html">OM MIG</a></li>
+                <li class="hideOnMobile"><a class="active" href="massage.html">MASSAGE</a></li>
+                <li class="hideOnMobile"><a href="pt.html">PERSONLIG TRÄNING</a></li>
+                <li class="hideOnMobile"><a href="contact.html">KONTAKT</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="26" viewBox="0 96 960 960" width="26">
+                            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Huvudkontainern-->
+        <div class="main-container-products">
+            <div class="picture_box">
+                <img class="pictures" src="../Webbutveckling/images/massage1.jpg" alt="Bild på massage" />
+            </div>
+
+            <!--Vilka olika massagebehandlingar som erbjuds-->
+            <section class="products">
+                <br><span class="offer_text">MASSAGE</span><br><br>
+                <p>Jag erbjuder flera olika typer av massagebehandlingar, anpassade efter dina behov –
+                    <br>vare sig du söker djupgående behandling för spända muskler, avslappning i en stressig vardag
+                    eller återhämtning efter träning.<br> <br> Jag är ansluten till Benify!<br><br>
+
+                    <span class="text_title"> Klassisk svensk massage</span><br>
+                    <hr class="hr-massage">
+                    En avslappnande behandling som löser upp muskelspänningar, förbättrar blodcirkulationen och ger en
+                    skön <br>känsla av lugn i både kropp och sinne. Perfekt vid stress, stelhet eller som förebyggande
+                    hälsovård.<br><br>
+
+                    <span class="text_title">Djupgående massage / behandlande massage</span><br>
+                    <hr class="hr-massage">
+                    För dig med specifika problemområden, som nackspärr, ryggsmärta eller stela axlar. <br> Här arbetar
+                    jag mer fokuserat på triggerpunkter och djupare muskelvävnad för att minska smärta ochåterställa
+                    rörlighet. <br><br>
+
+                    <span class="text_title">Idrottsmassage</span><br>
+                    <hr class="hr-massage">
+                    En mer kraftfull behandling som passar dig som tränar regelbundet. Syftet är att främja
+                    återhämtning, <br>minska träningsvärk, öka prestationsförmåga och förebygga skador. <br><br>
+
+                    <span class="text_title">Avslappningsmassage</span><br>
+                    <hr class="hr-massage">
+                    En lugn och mjuk behandling som hjälper kroppen att släppa på stress och spänningar. <br>En stunds
+                    återhämtning där du får möjlighet att bara vara, andas och ladda om.<br><br>
+                </p>
+
+                <span class="text_title">Priser</span><br>
+                <hr class="hr-massage">
+                30 minuter - 650kr<br>60 minuter - 900kr<br><br></p>
+                <a href="contact.html" class="btn-readmore-cont">Kontakt/Boka</a><br>
+                </p>
+        </div>
+
+        <!--Box med 2 bilder -->
+        <div id="pictures_03">
+            <div id="pic_box">
+                <img src="../Webbutveckling/images/massage2.jpg" alt="Massagebild" width="500" height="300" />
+            </div>
+
+            <div id="pic_box">
+                <img src="../Webbutveckling/images/massage3.jpg" alt="Massagebild" width="500" height="300" />
+            </div>
+        </div>
+    </main>
+
+    <!--Javascript-->
+    <script src="main.js"></script>
+
+    <!--Footer-->
+    <footer>
+        <hr class="hr-footer">
+
+        <div class="footer-container">
+            <div class="footer-box">
+                <span class="text_title"> Kontakt</span><br>
+                Johanna Hage<br>
+                Härdgatan 15<br>
+                432 32 Varberg</p>
+            </div>
+            <div class="footer-box">
+                <img src="images/footer.png" />
+            </div>
+            <div class="footer-box">
+                <p>info@Atletkliniken.se<br>
+                    073- xx xx xxx</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

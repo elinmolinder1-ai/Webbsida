@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johanna Hage</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+              width="26">
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+            </svg></a></li>
+
+        <!--länkarna som syns i storlek för mobilen-->
+        <li><a href="index.html">STARTSIDA</a></li>
+        <li><a class="active" href="about_me.html">OM MIG</a></li>
+        <li><a href="massage.html">MASSAGE</a></li>
+        <li><a href="pt.html">PERSONLIG TRÄNING</a></li>
+        <li><a href="contact.html">KONTAKT</a></li>
+      </ul>
+      <ul><!--Detta syns INTE när man är kollar i läget för mobil-->
+        <li><a class="link-logo" href="index.html"><img src="images/logo.png" width="400" height="100" border="0"></a>
+        </li>
+        <li class="hideOnMobile"><a href="index.html">STARTSIDA</a></li>
+        <li class="hideOnMobile"><a class="active" href="about_me.html">OM MIG</a></li>
+        <li class="hideOnMobile"><a href="massage.html">MASSAGE</a></li>
+        <li class="hideOnMobile"><a href="pt.html">PERSONLIG TRÄNING</a></li>
+        <li class="hideOnMobile"><a href="contact.html">KONTAKT</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+              viewBox="0 96 960 960" width="26">
+              <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+            </svg></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--Box om Johanna-->
+    <div class="me-section">
+      <div class="me-text">
+        <p><span class="offer_text">OM MIG</span><br><br>Hej! Jag heter Johanna Hage och är utbildad massör och
+          personlig tränare med över 10 års erfarenhet inom träning och mauell terapi/massagebehandlingar.<br>
+          Jag är 29 år gammal och bor i vackra Varberg, där jag driver min verksamhet med fokus på att hjälpa människor
+          må bättre – både fysiskt och mentalt.<br><br>
+          ✨ Personlig träning med fullt fokus på dig<br>
+          💆‍♂️ Djupgående massage för återhämtning och smärtlindring<br>
+          📍 Centralt i Varberg<br><br>
+          Tveka inte att höra av dig – din resa börjar här!<br>
+          Följ mig gärna på Instagram @Atletkliniken för tips, inspiration och lediga tider.<br><br>
+
+          <span class="offer_text">Mina meriter:</span>
+          <br> Direkt efter avslutad utbildning till cert. massör och tränare startade jag min resa som spaterapeut och
+          gruppträningsinstruktör på Varbergs kusthotell.<br>
+          Därefter läste jag vidare till PT/fystränare.<br>
+
+          Sommaren 2023 läste jag Avancerad Manuell terapi på Ortopedmedicinska Institutet i Göteborg. <br> Det innebär
+          att
+          jag nu förutom klassisk massage även utför ledmobilisering samt ortopediska- och neurologiska tester.<br><br>
+
+          För mig handlar hälsa om helhet – att hitta balansen mellan styrka, rörlighet, återhämtning och glädje i
+          rörelse. <br><br>
+          Varmt välkommen att ta kontakt om du är nyfiken på hur vi kan arbeta tillsammans mot dina mål!
+      </div>
+
+      <!--Bild: Johanna-->
+      <div class="me-bg-image">
+        <img src="images/hage2.jpg" alt="bg" />
+      </div>
+    </div>
+
+    <!--Bild på en mobil med info om instagrm-->
+    <div class="mobil-picture">
+      <a href="https://www.instagram.com/your_instagram_atletkliniken/" target="_blank"><img src="images/instagram2.png"
+          alt="bg" /></a>
+    </div>
+
+    <hr class="hr-main" id="hr-me">
+
+  </main>
+  <!--Kod för javascript-->
+  <script src="main.js"></script>
+
+
+  <!--footer-->
+  <footer>
+    <hr class="hr-footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <span class="text_title"> Kontakt</span><br>
+        Johanna Hage<br>
+        Härdgatan 15<br>
+        432 32 Varberg</p>
+      </div>
+      <div class="footer-box">
+        <img src="images/footer.png" />
+      </div>
+      <div class="footer-box">
+        <p>info@Atletkliniken.se<br>
+          073- xx xx xxx</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
